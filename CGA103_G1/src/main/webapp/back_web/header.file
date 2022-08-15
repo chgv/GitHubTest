@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+<%@ page import="com.emp.model.*"%>
+
+
+	
+	<!-- LOGO -->
+	<div class="nav-header">
+		<a href="" class="brand-logo">
+			<img src="<%=request.getContextPath()%>/back_web/assets/img/logo6.png" alt="Logo">
+		</a>
+	</div>
+	<!-- 管理員-->
+	<div class="header">
+		<div class="header-content">
+			<nav class="navbar navbar-expand">
+				<div class="collapse navbar-collapse justify-content-between">
+					<div class="header-left">
+						<div class="dashboard_bar" id="pagename">
+						</div>
+					</div>
+					<ul class="navbar-nav header-right">
+						<li class="nav-item dropdown header-profile">
+							<a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
+								
+								<img src="<%=request.getContextPath()%>/back_web/assets/img/w11.jpg" alt="">
+								<div class="header-info ms-3">
+									<small>Superadmin${depSvc1.getOne(empVO.emp_no).emp_name}</small>
+									<span>CGA103_G1${empVO.emp_name}</span>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end">
+								
+								<FORM METHOD="post" ACTION="<%=request.getContextPath()%>/EmpServlet.do" name="form1">
+								<input type="hidden" name="action" value="getOneEmp">
+								<input type="hidden" name="emp_no" value="${empVO.emp_no}">
+								<input type="submit" value="個人資料" class="dropdown-item ai-icon"></FORM>
+								
+								<a href="<%=request.getContextPath()%>/EmpServlet.do?action=log_out" class="dropdown-item ai-icon">
+									<i class='bx bx-log-out' style='color:#996a4d'></i>
+									<span class="ms-2">Logout</span>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>

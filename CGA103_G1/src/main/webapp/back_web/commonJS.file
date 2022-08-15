@@ -1,0 +1,12 @@
+    <script src="<%=request.getContextPath()%>/back_web/assets/vendor/global/global.min.js"></script>
+    <script src="<%=request.getContextPath()%>/back_web/assets/vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="<%=request.getContextPath()%>/back_web/assets/vendor/peity/jquery.peity.min.js"></script>
+    <script src="<%=request.getContextPath()%>/back_web/assets/vendor/apexchart/apexchart.js"></script>
+    <script src="<%=request.getContextPath()%>/back_web/assets/vendor/bootstrap-datetimepicker/js/moment.js"></script>
+    <script src="<%=request.getContextPath()%>/back_web/assets/vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="<%=request.getContextPath()%>/back_web/assets/js/plugins-init/datatables.init.js"></script>
+	<script src="<%=request.getContextPath()%>/back_web/assets/vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="<%=request.getContextPath()%>/back_web/assets/js/custom.min.js"></script>
+	<script src="<%=request.getContextPath()%>/back_web/assets/js/deznav-init.js"></script>
+	<script src="<%=request.getContextPath()%>/back_web/assets/js/demo.js"></script>
+	<script src="<%=request.getContextPath()%>/back_web/assets/js/styleSwitcher.js"></script>
