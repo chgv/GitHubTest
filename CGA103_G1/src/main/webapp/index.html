@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+
+<body>
+    <button>TEST</button>
+    <script>
+    
+        document.querySelector("button").addEventListener("click", () => {
+            const url = "emp";
+            fetch(url)
+                .then(resp => resp.json())
+                .then(empList => {
+                   
+                            console.log(empList);
+                     
+                })
+        });
+    </script>
+</body>
+</html>
